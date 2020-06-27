@@ -1,5 +1,5 @@
 {
-  "name": "guest-book",
+  "name": "meme-chain",
   "version": "0.1.0",
   "license": "(MIT AND Apache-2.0)",
   "scripts": {
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.3",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
@@ -40,6 +41,7 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
+    "@babel/runtime": "^7.10.3",
     "big.js": "^5.2.2",
     "env-cmd": "^10.1.0",
     "ipfs-api": "^26.1.2",
@@ -84,3 +86,4 @@
     ]
   }
 }
+
