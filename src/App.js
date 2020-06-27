@@ -96,7 +96,7 @@ export default class App extends Component {
                  reqSignIn = {this.requestSignIn} 
                  wallet = {this.props.wallet}
               />
-              <Router>
+              <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                   <Route exact path={process.env.PUBLIC_URL + "/"} component={() => <Home 
                     contract = {this.props.contract}
