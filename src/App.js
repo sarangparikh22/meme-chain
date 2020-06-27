@@ -97,23 +97,23 @@ export default class App extends Component {
                  reqSignIn = {this.requestSignIn} 
                  wallet = {this.props.wallet}
               />
-              <HashRouter basename={process.env.PUBLIC_URL}>
+              <Router>
                 <Switch>
-                  <Route exact path={process.env.PUBLIC_URL + "/"} component={() => <Home 
+                  <Route exact path={ "/"} component={() => <Home 
                     contract = {this.props.contract}
                   />} />
-                  <Route exact path={process.env.PUBLIC_URL  + "/createTrend"} component={() => <CreateTrend 
+                  <Route exact path={ "/createTrend"} component={() => <CreateTrend 
                     contract = {this.props.contract}
                   />} />
-                  <Route path={process.env.PUBLIC_URL  + "/view/:id"} component={(props) => <View 
+                  <Route path={ "/view/:id"} component={(props) => <View 
                   contract = {this.props.contract}
                      {...props}
                   />} />
-                  <Route path={process.env.PUBLIC_URL  + "/charity"} component={() => <AddCharity 
+                  <Route path={ "/charity"} component={() => <AddCharity 
                     contract = {this.props.contract}
                   />} />
                 </Switch>
-              </HashRouter>
+              </Router>
           </div>
         )
     }
