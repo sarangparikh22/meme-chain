@@ -43,7 +43,7 @@ export class View extends Component {
         alert('done');
 
     }
-    async componentWillMount(){
+    async componentDidUpdate(){
         let topicID = this.props.match.params.id;
         const { contract } = this.props
         let topicName = await contract.getTopicDetails({topicID})
