@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Badge, Breadcrumb, CardColumns, Button, Navbar, Modal, NavDropdown, Form, FormControl, Popover, OverlayTrigger, Container } from 'react-bootstrap';
 import ipfs from '../ipfs'
 import Post from './Post'
+import { withRouter } from 'react-router-dom'
+
 
 export class View extends Component {
     constructor(props){
@@ -116,4 +118,4 @@ export class View extends Component {
     }
 }
 
-export default View
+export default withRouter(View)
