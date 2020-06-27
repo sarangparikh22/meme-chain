@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 
 import {
+  HashRouter,
   BrowserRouter as Router,
   Switch,
   Route,
@@ -28,7 +29,7 @@ export default class App extends Component {
           fundVal: 100
         }
         this.signedInFlow = this.signedInFlow.bind(this);
-        this.requestSignIn = this.requestSignIn.bind(this);
+        this.requestSignIn = this.requestSignIn.bind(this);Router
         this.requestSignOut = this.requestSignOut.bind(this);
         this.signedOutFlow = this.signedOutFlow.bind(this);
       }
@@ -96,7 +97,7 @@ export default class App extends Component {
                  reqSignIn = {this.requestSignIn} 
                  wallet = {this.props.wallet}
               />
-              <Router basename={process.env.PUBLIC_URL}>
+              <HashRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
                   <Route exact path={process.env.PUBLIC_URL + "/"} component={() => <Home 
                     contract = {this.props.contract}
@@ -112,7 +113,7 @@ export default class App extends Component {
                     contract = {this.props.contract}
                   />} />
                 </Switch>
-              </Router>
+              </HashRouter>
           </div>
         )
     }
