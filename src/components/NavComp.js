@@ -12,10 +12,10 @@ export class NavComp extends Component {
                     <div className="nav-section ml-auto">
                         <ul>
                         <li>
-                            <a href={process.env.PUBLIC_URL + "/"}>Explore</a>
+                            <a href={"/"}>Explore</a>
                         </li>
                         <li>
-                            <a href={process.env.PUBLIC_URL + "/createTrend"}>Create Trend</a>
+                            <a href={"/createTrend"}>Create Trend</a>
                         </li>
                         <li>
                         {
