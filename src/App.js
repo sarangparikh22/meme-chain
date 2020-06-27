@@ -98,17 +98,17 @@ export default class App extends Component {
               />
               <Router>
                 <Switch>
-                  <Route exact path="/" component={() => <Home 
+                  <Route exact path={process.env.PUBLIC_URL + "/"} component={() => <Home 
                     contract = {this.props.contract}
                   />} />
-                  <Route exact path="/createTrend" component={() => <CreateTrend 
+                  <Route exact path={process.env.PUBLIC_URL  + "/createTrend"} component={() => <CreateTrend 
                     contract = {this.props.contract}
                   />} />
-                  <Route path="/view/:id" component={(props) => <View 
+                  <Route path={process.env.PUBLIC_URL  + "/view/:id"} component={(props) => <View 
                   contract = {this.props.contract}
                      {...props}
                   />} />
-                  <Route path="/charity" component={() => <AddCharity 
+                  <Route path={process.env.PUBLIC_URL  + "/charity"} component={() => <AddCharity 
                     contract = {this.props.contract}
                   />} />
                 </Switch>
