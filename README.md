@@ -1,9 +1,14 @@
-Guest Book
+Meme-Chain
 ==========
 
-[![Build Status](https://travis-ci.com/near-examples/guest-book.svg?branch=master)](https://travis-ci.com/near-examples/guest-book)
+Meme-Chain is a social network of memes with a good cause for charity and donations built on NEAR Protocol. Users can browse the trends and can upload the memes on it. Other users can just browse the memes and have a good time. They can also tip as well where the 90% of the money goes to the charity selected by the memer and rest 10% goes to him. This way the memer has incentives to create more memes and we feel good as we have donated our money to a charity. It supports all kinds of meme format from jpg to gifs and is stored in IPFS. The application is hosted in NEAR Protocol as it is the best choice for an application like this which will have traffic and NEAR has relatively less gas usage. 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/near-examples/guest-book)
+Finall! With Meme-Chain we can escape the toxic world of Social Networks (Twitter, Faceboook, you name it) into the world of Memes :)
+
+You can find the demo of the application [here.](https://vimeo.com/435033758)
+
+Thanks a lot to NEAR Community for all the support. 
+
 
 <!-- MAGIC COMMENT: DO NOT DELETE! Everything above this line is hidden on NEAR Examples page -->
 
